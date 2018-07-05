@@ -1,11 +1,10 @@
 import "package:english_words/english_words.dart";
 import "package:flutter/material.dart";
 import 'package:flutter_app/DetailPage.dart';
-import 'package:flutter_app/cookbook/list/DiffDataList.dart';
+import 'package:flutter_app/cookbook/touch/TapDemo.dart';
 //引用material组件
 
-void main() =>
-    runApp(new DiffDataList());
+void main() => runApp(new TapDemo());
 
 //    runApp(new MaterialApp(
 //        title: 'Shopping App', home: new ShoppingList(products: <Product>[
