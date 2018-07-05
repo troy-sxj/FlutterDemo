@@ -1,15 +1,11 @@
 import "package:english_words/english_words.dart";
 import "package:flutter/material.dart";
-import 'package:flutter_app/ColorDemo.dart';
 import 'package:flutter_app/DetailPage.dart';
-import 'package:flutter_app/FoodInfo.dart';
-import 'package:flutter_app/ShoppingDemo.dart';
-import 'package:flutter_app/TutorialHome.dart';
-import 'package:flutter_app/cookbook/ThemeDemo.dart';
+import 'package:flutter_app/cookbook/list/DiffDataList.dart';
 //引用material组件
 
 void main() =>
-      runApp(new ThemeDemo());
+    runApp(new DiffDataList());
 
 //    runApp(new MaterialApp(
 //        title: 'Shopping App', home: new ShoppingList(products: <Product>[
@@ -93,7 +89,7 @@ class RandomWordsState extends State<RandomWords> {
           );
         });
         final divided =
-        ListTile.divideTiles(context: context, tiles: titles).toList();
+            ListTile.divideTiles(context: context, tiles: titles).toList();
 
         return new Scaffold(
           appBar: new AppBar(
