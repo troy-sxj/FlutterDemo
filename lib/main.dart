@@ -5,15 +5,18 @@ import 'package:flutter_app/DetailPage.dart';
 import 'package:flutter_app/FoodInfo.dart';
 import 'package:flutter_app/ShoppingDemo.dart';
 import 'package:flutter_app/TutorialHome.dart';
+import 'package:flutter_app/cookbook/ThemeDemo.dart';
 //引用material组件
 
 void main() =>
-    runApp(new MaterialApp(
-        title: 'Shopping App', home: new ShoppingList(products: <Product>[
-          new Product(name: 'Eggs'),
-          new Product(name: 'Flour'),
-          new Product(name: 'Chocolate chips'),
-    ],))); //入口函数
+      runApp(new ThemeDemo());
+
+//    runApp(new MaterialApp(
+//        title: 'Shopping App', home: new ShoppingList(products: <Product>[
+//          new Product(name: 'Eggs'),
+//          new Product(name: 'Flour'),
+//          new Product(name: 'Chocolate chips'),
+//    ],))); //入口函数
 
 class MyApp extends StatelessWidget {
   @override
