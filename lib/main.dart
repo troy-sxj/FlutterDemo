@@ -1,10 +1,10 @@
 import "package:english_words/english_words.dart";
 import "package:flutter/material.dart";
 import 'package:flutter_app/DetailPage.dart';
-import 'package:flutter_app/cookbook/sample/AppBarBottomDemo.dart';
+import 'package:flutter_app/cookbook/state/MixStateDemo.dart';
 //引用material组件
 
-void main() => runApp(new TabbedAppBarSample());
+void main() => runApp(new MixStateDemo());
 
 //    runApp(new MaterialApp(
 //        title: 'Shopping App', home: new ShoppingList(products: <Product>[
