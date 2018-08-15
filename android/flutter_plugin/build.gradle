@@ -1,0 +1,25 @@
+apply plugin: 'groovy' //引入groovy插件
+apply plugin: 'maven' //maven插件
+
+dependencies {
+    compile gradleApi()
+    compile localGroovy()
+}
+
+repositories {
+    mavenCentral()
+}
+
+//设置maven deployer
+uploadArchives {
+    repositories {
+        mavenDeployer {
+            pom.groupId = 'com.longzhu.fluttergradle'
+            pom.artifactId = 'flutter.plugin'
+            pom.version = 1.3
+            //文件发布到下面目录。
+            //此处发布到本地maven仓库 ，如要发布到jcenter，方法相同。
+            repository(url: uri('../release'))
+        }
+    }
+}
