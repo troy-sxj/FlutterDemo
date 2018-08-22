@@ -1,5 +1,8 @@
 import "package:flutter/material.dart";
 import 'package:flutter_app/DetailPage.dart';
+import 'package:flutter_app/anim/AnimationPage.dart';
+import 'package:flutter_app/baranim/ChartPage.dart';
+import 'package:flutter_app/tutorial/BabyNameVotesPage.dart';
 import 'package:flutter_app/tutorial/FriendlyChatPage.dart';
 //引用material组件
 
@@ -21,15 +24,24 @@ class MyApp extends StatelessWidget {
             scrollDirection: Axis.vertical,
             children: <Widget>[
               new ListItemView(
-                title: 'FrindlyChat',
+                title: 'Frindly Chat',
                 routeUrl: '/a',
+              ),
+              new ListItemView(
+                title: 'Chart Anim',
+                routeUrl: '/b',
+              ),
+              new ListItemView(
+                title: 'Animation',
+                routeUrl: '/c',
               ),
             ],
           ))),
       routes: <String, WidgetBuilder>{
         '/a': (BuildContext context) => new FriendlyChatPage(),
-        '/b': (BuildContext context) => new DetailPage(),
-        '/c': (BuildContext context) => new DetailPage(),
+        '/b': (BuildContext context) => new ChartPage(),
+        '/c': (BuildContext context) => new AnimationPage(),
+        '/d': (BuildContext context) => new DetailPage(),
       },
     );
     //

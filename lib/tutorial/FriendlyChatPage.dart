@@ -72,7 +72,7 @@ class ChatScreenState extends State<ChatScreen> with TickerProviderStateMixin {
                   setState(() {
                     _isComposing = text.length > 0;
                   });
-                  print("--------------- " + _isComposing.toString());
+//                  print("--------------- " + _isComposing.toString());
                 },
                 decoration:
                     new InputDecoration.collapsed(hintText: "Send a message"),
